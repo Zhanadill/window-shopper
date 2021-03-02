@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="window_shopper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="U8q-Om-kz4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="SEC-29-8QK">
+                                <rect key="frame" x="167" y="99" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="eT2-uh-RJC"/>
+                                    <constraint firstAttribute="height" constant="80" id="nPe-WF-otv"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your wage" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Och-eL-Kud" customClass="CurrenctyTxtField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="30" y="219" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gv7-zD-wyr" customClass="CurrenctyTxtField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="30" y="283" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ih-JN-a0c">
+                                <rect key="frame" x="30" y="358" width="354" height="48"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="41"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KqO-7q-RjN">
+                                <rect key="frame" x="171.5" y="411" width="71" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BTG-O7-zOF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZa-Bv-j0n">
+                                <rect key="frame" x="20" y="806" width="374" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Clear Calculation">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalculation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ib-Ip-k5w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Och-eL-Kud" secondAttribute="trailing" constant="30" id="6dA-tB-svD"/>
+                            <constraint firstItem="gv7-zD-wyr" firstAttribute="top" secondItem="Och-eL-Kud" secondAttribute="bottom" constant="30" id="FvD-ht-fQs"/>
+                            <constraint firstItem="U8q-Om-kz4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KLl-1U-yw6"/>
+                            <constraint firstItem="zZa-Bv-j0n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="McC-SC-srD"/>
+                            <constraint firstItem="U8q-Om-kz4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pif-y0-KQ5"/>
+                            <constraint firstItem="gv7-zD-wyr" firstAttribute="height" secondItem="Och-eL-Kud" secondAttribute="height" id="Pwq-3d-p1c"/>
+                            <constraint firstItem="2Ih-JN-a0c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="StN-E6-k87"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zZa-Bv-j0n" secondAttribute="trailing" constant="20" id="Vil-Kx-gTE"/>
+                            <constraint firstItem="Och-eL-Kud" firstAttribute="top" secondItem="SEC-29-8QK" secondAttribute="bottom" constant="40" id="YQk-r6-O6V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zZa-Bv-j0n" secondAttribute="bottom" constant="20" id="ZZb-vr-kfa"/>
+                            <constraint firstItem="KqO-7q-RjN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ap3-oY-Zkm"/>
+                            <constraint firstItem="U8q-Om-kz4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cT6-TU-1vF"/>
+                            <constraint firstItem="KqO-7q-RjN" firstAttribute="top" secondItem="2Ih-JN-a0c" secondAttribute="bottom" constant="5" id="ema-tO-5vv"/>
+                            <constraint firstItem="gv7-zD-wyr" firstAttribute="trailing" secondItem="Och-eL-Kud" secondAttribute="trailing" id="j0c-TZ-wK8"/>
+                            <constraint firstItem="2Ih-JN-a0c" firstAttribute="top" secondItem="gv7-zD-wyr" secondAttribute="bottom" constant="41" id="jKO-WC-3pk"/>
+                            <constraint firstItem="2Ih-JN-a0c" firstAttribute="width" secondItem="Och-eL-Kud" secondAttribute="width" id="quY-2Y-RGG"/>
+                            <constraint firstItem="SEC-29-8QK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="rV3-fe-2D0"/>
+                            <constraint firstItem="U8q-Om-kz4" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rZO-ws-Zqw"/>
+                            <constraint firstItem="SEC-29-8QK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tOA-ce-4ya"/>
+                            <constraint firstItem="gv7-zD-wyr" firstAttribute="leading" secondItem="Och-eL-Kud" secondAttribute="leading" id="yRd-ZL-Zfk"/>
+                            <constraint firstItem="Och-eL-Kud" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ziO-7C-SY4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="hoursLabel" destination="KqO-7q-RjN" id="Cuz-Qs-gMD"/>
+                        <outlet property="itemTxt" destination="gv7-zD-wyr" id="WdB-xZ-URZ"/>
+                        <outlet property="resultLabel" destination="2Ih-JN-a0c" id="pKC-b7-pho"/>
+                        <outlet property="wageTxt" destination="Och-eL-Kud" id="NeC-rt-c77"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="windowShopperBG" width="414" height="736"/>
+        <image name="windowShopperIcon" width="115" height="115"/>
+    </resources>
+</document>
